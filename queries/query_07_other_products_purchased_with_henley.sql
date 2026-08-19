@@ -1,11 +1,3 @@
--- =============================================================================
--- Query 07: Other products purchased by customers who also purchased
--- "YouTube Men's Vintage Henley" in July 2017
--- Business question: What else do buyers of this product tend to buy?
--- Useful for cross-sell / bundle recommendations.
--- Output: product name and total quantity ordered.
--- =============================================================================
-
 WITH customer AS (
     SELECT fullVisitorId
     FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201707*`,
