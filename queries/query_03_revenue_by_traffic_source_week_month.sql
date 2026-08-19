@@ -1,10 +1,3 @@
--- =============================================================================
--- Query 03: Revenue by traffic source, by week and by month, in June 2017
--- Business question: Which traffic sources generate the most revenue, and
--- how does that revenue break down at a weekly granularity within the month?
--- Result unions a monthly rollup with the weekly detail, ordered by revenue DESC.
--- =============================================================================
-
 WITH week_out AS (
     SELECT
         'week' AS time_type,
