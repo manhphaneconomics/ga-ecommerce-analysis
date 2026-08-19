@@ -1,11 +1,3 @@
--- =============================================================================
--- Query 04: Average number of pageviews by purchaser type
--- (purchasers vs non-purchasers) in June and July 2017
--- Business question: Do users who eventually purchase browse more or fewer
--- pages than users who never purchase? This hints at how much "research"
--- behavior precedes a conversion.
--- =============================================================================
-
 WITH purchase AS (
     SELECT
         FORMAT_DATE('%Y%m', PARSE_DATE('%Y%m%d', date)) AS month,
