@@ -1,10 +1,3 @@
--- =============================================================================
--- Query 06: Average amount of money spent per session, purchaser data only,
--- in July 2017
--- Business question: What is the average revenue generated per visit,
--- when we only look at sessions where a purchase actually occurred?
--- =============================================================================
-
 SELECT
     '201707' AS month,
     ROUND(
