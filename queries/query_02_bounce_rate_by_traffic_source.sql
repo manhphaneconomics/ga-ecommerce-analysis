@@ -1,11 +1,3 @@
--- =============================================================================
--- Query 02: Bounce rate per traffic source in July 2017
--- Bounce_rate = num_bounce / total_visit
--- Business question: Which traffic sources bring visitors who bounce
--- immediately, and which sources bring more engaged traffic?
--- Result ordered by total_visits DESC.
--- =============================================================================
-
 SELECT
     trafficSource.`source`,
     SUM(totals.visits)   AS total_visits,
