@@ -1,10 +1,3 @@
--- =============================================================================
--- Query 01: Calculate total visit, pageview, transaction for Jan, Feb, March 2017
--- Business question: How did overall site traffic and conversions trend
--- month-over-month in Q1 2017?
--- Result ordered by month.
--- =============================================================================
-
 SELECT
     FORMAT_DATE("%Y%m", PARSE_DATE('%Y%m%d', date)) AS month,
     SUM(totals.visits)       AS visits,
