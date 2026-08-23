@@ -1,22 +1,9 @@
 # 📊 E-commerce Behavior Analysis with BigQuery & Google Analytics Sample Data
 
-**Author:** [Your Name] · Data Analyst / Business Analyst Intern Candidate
-
-[![SQL](https://img.shields.io/badge/SQL-BigQuery-4285F4?logo=googlebigquery&logoColor=white)](https://cloud.google.com/bigquery)
-[![Dataset](https://img.shields.io/badge/Dataset-Google%20Analytics%20Sample-orange)](https://console.cloud.google.com/marketplace/product/obfuscated-ga360-data/google-analytics-sample)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-> A hands-on SQL project analyzing real-world e-commerce user behavior — from traffic acquisition to conversion funnel — using Google BigQuery's public `ga_sessions_2017` dataset.
-
----
-
-## 🔍 Live Query Results (BigQuery Console)
 
 All 8 queries below have been executed and validated directly in Google BigQuery. You can view the live project (queries, execution, and saved results) here:
 
-👉 **[Open in BigQuery Console](https://console.cloud.google.com/bigquery?ws=!1m7!1m6!12m5!1m3!1sgolden-shine-472610-g7!2sus-central1!3s8401e328-64f2-4126-8ffb-c8957fd87998!2e1)**
-
-*(Requires a Google account with BigQuery access. If you'd like a walkthrough instead, see the screenshots in [`/images`](./images) or the summarized results below.)*
+👉 **[Open in BigQuery Console](https://console.cloud.google.com/bigquery?project=uni-sql-project-1&authuser=1&ws=!1m15!1m7!12m5!1m3!1sgolden-shine-472610-g7!2sus-central1!3s8401e328-64f2-4126-8ffb-c8957fd87998!2e1!23sRECENT_RESOURCES!1m6!12m5!1m3!1suni-sql-project-1!2sus-central1!3s52278554-753e-4a60-bf9e-de9c63bb4ddd!2e1)**
 
 ---
 
@@ -173,39 +160,3 @@ The GA sample dataset stores each **session** as a row, with **hits** (page view
 - Translating raw query output into **business insights and recommendations**, not just numbers
 - Working with Google Cloud Platform / BigQuery console end-to-end
 
----
-
-## 📂 Repository Structure
-
-```
-ga-ecommerce-analysis/
-├── README.md                                          ← you are here
-├── queries/                                            ← one .sql file per business question
-│   ├── query_01_visits_pageviews_transactions_by_month.sql
-│   ├── query_02_bounce_rate_by_traffic_source.sql
-│   ├── query_03_revenue_by_traffic_source_week_month.sql
-│   ├── query_04_avg_pageviews_purchaser_vs_non_purchaser.sql
-│   ├── query_05_avg_transactions_per_purchasing_user.sql
-│   ├── query_06_avg_revenue_per_session.sql
-│   ├── query_07_other_products_purchased_with_henley.sql
-│   └── query_08_conversion_funnel_view_to_purchase.sql
-└── images/                                             ← BigQuery console result screenshots
-    ├── Query_1.png ... Query_8.png
-```
-
----
-
-## ▶️ How to Reproduce This Analysis
-
-1. Go to the [BigQuery Console](https://console.cloud.google.com/bigquery) (a free Google Cloud account works — the public dataset costs nothing to query at this scale, well within the free tier).
-2. Open a new query tab and paste the contents of any file from [`/queries`](./queries).
-3. Run — no dataset import needed, since `bigquery-public-data.google_analytics_sample.ga_sessions_2017*` is a public dataset available to every GCP project.
-
----
-
-## 📬 Contact
-
-**[Your Name]**
-📧 [your.email@example.com] · 🔗 [LinkedIn](https://linkedin.com/in/yourprofile) · 💻 [GitHub](https://github.com/yourusername)
-
-*This project was built as part of my preparation for a Data Analyst Intern role, to practice writing production-style SQL against realistic nested analytics data and translating query output into business insight.*
